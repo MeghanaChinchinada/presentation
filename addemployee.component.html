@@ -1,0 +1,37 @@
+<p>Angular 2 Operation</p>
+
+      <app-addanemployee></app-addanemployee>
+<h2>Show All EMPLOYEE</h2>
+
+<table border="1">
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>Department</th>
+    <th>ACTION</th>
+    </thead>
+    <tbody>
+      
+        <tr *ngFor="let a of employees, let i=index">
+          <td>
+            <input [(ngModel)]="a.empId" type="text" name="{{a.empId}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="a.empName" type="text" name="{{a.empName}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="a.empSal" type="text" name="{{a.empSal}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="a.empDep" type="text" name="{{a.empDep}}" />
+          </td>
+    
+          <td>
+              <button (click)="updateEmployee(i)">UPDATE</button>
+              <button (click)="deleteEmployee(i)">DELETE</button>
+            </td>
+        </tr>
+      </tbody>
+</table>
+<app-updateemployee></app-updateemployee>

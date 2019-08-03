@@ -1,0 +1,244 @@
+<!-- <p>
+  header works!
+</p>
+<table>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>city</th>
+    <th>salary</th>
+    <th>pin</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>A</td>
+    <td>Mum</td>
+    <td>20000</td>
+    <td>2432433</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>A</td>
+    <td>Mum</td>
+    <td>20000</td>
+    <td>2432433</td>  
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>A</td>
+    <td>Mum</td>
+    <td>20000</td>
+    <td>2432433</td>
+  </tr>
+</table>
+    -->
+  <!-- <table border="5">
+    <thead>
+    
+      <th>Id</th>
+      <th>Name</th>
+      <th>city</th>
+      <th>salary</th>
+      <th>pin</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees let i=index">
+        <td><input [(ngModel)]="a.id" type="text" name="{{a.id}}"/></td>
+        <td><input [(ngModel)]="a.name" type="text" name="{{a.name}}"/></td>
+        <td><input [(ngModel)]="a.city" type="text" name="{{a.city}}"/></td>
+        <td><input [(ngModel)]="a.salary" type="text" name="{{a.salary}}"/></td>
+        <td><input [(ngModel)]="a.pin" type="text" name="{{a.pin}}"/></td>
+      </tr>
+    </tbody>
+    
+</table>
+<a routerLink="/addEmployee">Add Employee</a>
+     </tr>
+  </table>
+  <tr>
+    <td>
+      <button (click)="showemployees(id,name,city,salary,pin)">Delete</button>
+    </td>
+  </tr>>
+   -->
+ 
+    <!-- <tr *ngFor="let employee of employees; let i = index">
+      <td>
+         <input type="text" id="employees" [(ngModel)]="employee.id" name="employee" /> -->
+        <!-- <input [(ngModel)]="employee.id" type="text" name="{{employee.id}}" />
+        </td>
+        <td>
+        <input [(ngModel)]="employee.name" type="text" name="{{employee.name}}" />
+        </td>
+        <td>
+        <input [(ngModel)]="employee.city" type="text" name="{{employee.city}}" />
+      </td>
+      <td>
+        <input [(ngModel)]="employee.salary" type="text" name="{{employee.salary}}" />
+      </td>
+      <td>
+        <input [(ngModel)]="employee.pin" type="text" name="{{employee.pin}}" />
+      </td>
+      <td>
+        <button (click)="addFieldValue()">Add</button>
+    </td>
+  </tr>  -->
+
+  <!-- <button (click)="addemployees()">Add Employee</button>
+<ul>
+  <li *ngFor="#employee of employees">
+    {{employees}}
+  </li>
+</ul> -->
+
+<!-- </table> -->
+<!-- <form>
+  Angular 2 Operation<br>
+  <div class="row">
+      <div class="col-25">
+        <label for="lname">ID</label><input type="text" name="id">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-25">
+        <label for="lname">Name</label> <input type="text" name="name">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-25">
+        <label for="lname">Salary</label> <input type="text" name="salary"><br>
+      </div>
+  </div>
+  <div class="row">
+        <div class="col-25">
+          <label for="lname">Department</label> <input type="text" name="department"><br>
+        </div>
+  </div>         
+  <div>
+  <input type="button" value="Add Employee">
+</div>
+</form> -->
+
+
+<!-- 
+  
+ -->
+
+  <!-- <ul *ngFor="let employee of employees">
+      <li>{{employee.id}}</li>
+      <li>{{employee.name}}</li>
+      <li>{{employee.city}}</li>
+      <li>{{employee.salary}}</li>
+      <li>{{employee.pin}}</li>
+  </ul>
+   {{employees}}
+ <br><br>
+    <table>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>city</th>
+        <th>salary</th>
+        <th>pin</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>A</td>
+        <td>Mum</td>
+        <td>20000</td>
+        <td>2432433</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>A</td>
+        <td>Mum</td>
+        <td>20000</td>
+        <td>2432433</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>A</td>
+        <td>Mum</td>
+        <td>20000</td>
+        <td>2432433</td>
+      </tr>
+    </table>
+ <table align="center">
+  <thead>
+    <th>id</th>
+    <th>name</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let employee of employees">
+          
+          <td>{{employee.id}}</td>
+          <td>{{employee.name}}</td>
+      </tr>
+    
+  </tbody>
+</table> -->
+
+
+<!-- 
+<h1 *ngIf="header">
+  Hello
+</h1> -->
+
+<!-- <div [ngStyle]="{'background':'yellow'}">HAPPY</div>
+<h1 [ngStyle]="{'background':'pink'}">HAPPY</h1> -->
+
+<!-- <div class="container" [ngSwitch]="myVar">
+  <div *ngSwitchCase="A">CaseA</div>
+  <div *ngSwitchCase="B">CaseB</div>
+  <div *ngSwitchCase="B">CaseB</div>
+  <div *ngSwitchDefault="D">Default</div>
+</div> -->
+
+<!-- <div *ngFor="let id of ids">
+    Id is {{id}}
+    <div ngSwitch="{{id%2}}">
+    <div *ngSwitchCase="'0'" [ngClass]="'one'">I am Even.</div>
+    <div *ngSwitchCase="'1'" [ngClass]="'two'">I am Odd.</div>
+    <div *ngSwitchDefault>Nothing Found.</div>
+    </div> 	
+  </div> -->
+
+<!-- <input type="text" [(ngModel)]="firstname">
+{{firstname}} -->
+
+
+<!-- <table border="5">
+  <tr>
+    <th>Name</th>
+    
+    <th>city</th>
+  </tr>
+  <tr>
+    <td>john</td>
+    <td><input type="text" [(ngModel)]='city1'/></td>
+  </tr>
+  <tr>
+      <td>jack</td>
+      <td><input type="text" [(ngModel)]='city2'/></td>
+    </tr>
+    {{city1|uppercase}}
+    {{city2|lowercase}}
+</table> -->
+
+
+<!-- <input type="text" [(ngModel)]='value'/>
+{{value|addition}} -->
+
+
+<!-- {{5|addition}} -->
+
+
+<!-- <input type="text" [(ngModel)]='name'/>
+{{name}}
+<button (click)="getName(name)">Submit</button> -->
+<!-- <br>
+<a routerLink="/showstudents">Show All Students</a><br>
+<a routerLink="/showemployees">Show All Employees</a> --> 
+
+
+

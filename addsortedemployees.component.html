@@ -1,0 +1,38 @@
+<table border="1">
+    <tr>
+      <th>
+        <a (click)="sortId()">ID</a>
+      </th>
+      <th>
+          <a (click)="sortName()">NAME</a>
+        </th>
+        <th>
+            <a (click)="sortSal()">SALARY</a>
+          </th>
+          <th>
+              <a (click)="sortDept()">DEPARTMENT</a>
+            </th>
+      </tr>
+      
+        
+          <tr *ngFor="let a of employeesort">
+            <td>
+              <input [(ngModel)]="a.empId" type="text" name="{{a.empId}}" />
+            </td>
+            <td>
+              <input [(ngModel)]="a.empName" type="text" name="{{a.empName}}" />
+            </td>
+            <td>
+              <input [(ngModel)]="a.empSal" type="text" name="{{a.empSal}}" />
+            </td>
+            <td>
+              <input [(ngModel)]="a.empDep" type="text" name="{{a.empDep}}" />
+            </td>
+            <!-- <td>
+                <input [(ngModel)]="a.empjoiningdate" type="text" name="{{a.empjoiningdate}}" />
+              </td> -->
+           
+            
+   
+  </tr>
+    </table>  

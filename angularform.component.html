@@ -1,0 +1,58 @@
+<form #add=ngForm (ngSubmit)="addProduct(add)">
+  <table>
+     
+        <tr>
+          <td><label>Product ID</label></td>
+          <td><input type="text" name="id" [(ngModel)]="add.ID"></td>
+          <span *ngIf="showIdValidation">This field is required</span>
+          <br/>
+        </tr>
+        <tr>
+          <td><label>Product Name</label></td>
+          <td><input type="text" name="name" [(ngModel)]="add.Name"></td>
+          <span *ngIf="showNameValidation">This field is required</span>
+          <br/>
+          </tr>
+          <tr>
+          <td><label>Product Cost</label></td>
+          <td><input type="text" name="cost" [(ngModel)]="add.Cost"></td>
+          <span *ngIf="showCostValidation">This field is required</span> 
+          <br/>
+          </tr>
+          <tr>
+          <td><label>Product Online</label></td>
+          <td><input type="radio" name="online" value="Yes" [(ngModel)]="add.Online">Yes
+            <input type="radio" name="online" value="No" [(ngModel)]="add.Online">No
+          </td>
+          
+          <br/>
+          </tr>
+          <tr>
+            <td><label>Product Category</label></td>
+            <td>
+              <select type="text" name="category" [(ngModel)]="add.Category">
+                <option></option>
+                <option value="grocery">Grocery</option>
+                <option value="mobile">Mobile</option>
+                <option value="electronics">Electronics</option>
+                <option value="cloths">Cloths</option>
+              </select>
+            </td>
+            <span *ngIf="showCategoryValidation">This field is required</span> 
+            <br/>
+            </tr>
+            <tr>
+              <td><label>Available in Store</label></td>
+              <td><input type="checkbox" name="store" value="big bazar" [(ngModel)]="add.Store">Big Bazar
+                <input type="checkbox" name="store" value="d mart">DMart
+                <input type="checkbox" name="store" value="reliance">Reliance
+                <input type="checkbox" name="store" value="mega store">Mega Strore
+              </td>
+              <span *ngIf="showStoreValidation"></span> 
+              <br/>
+              </tr>
+          <button type="submit" value="add product">Add Product</button>
+        
+        </table>
+      </form>
+     

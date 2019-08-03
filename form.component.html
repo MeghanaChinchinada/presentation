@@ -1,0 +1,19 @@
+<!-- <p>
+  form works!
+</p> -->
+
+
+<form #login=ngForm (ngSubmit)="authenticate(login)">
+  <label>Username:</label>
+  <input type="text" name="username" [(ngModel)]="login.username">
+   <br>
+   <label>Password:</label>
+  <input type="text" name="password" [(ngModel)]="login.password">
+   <br>
+   <button>Login</button>
+</form>
+
+<!-- <ul>
+  <li *ngFor="let employeedata of employeesdata">
+  {{employeedata}}</li>
+  </ul> -->

@@ -1,0 +1,48 @@
+<h2>UPDATE EMPLOYEE</h2>
+
+<form name="form" #update=ngForm (ngSubmit)="setNew(update)">
+  <table>
+    <tr>
+      <td>
+        <label>ID</label>
+      </td>
+      <td>
+        <input type="text" name="empId" [(ngModel)]="empId" />
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Name</label>
+      </td>
+      <td>
+        <input type="text" name="empName" [(ngModel)]="empName" />
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Salary</label>
+      </td>
+      <td>
+        <input type="text" name="empSal" [(ngModel)]="empSal" />
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label>Department</label>
+      </td>
+      <td>
+        <input type="text" name="empDep" [(ngModel)]="empDep" />
+      </td>
+    </tr>
+
+    <!-- <button type="submit">Update Employee</button> -->
+
+    <td><button (click)=" updateEmployee(index,update)">Update Employee</button></td>
+
+  </table>
+</form>
+
+<br>

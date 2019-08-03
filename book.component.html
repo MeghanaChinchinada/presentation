@@ -1,0 +1,27 @@
+<table border="1">
+  <thead>
+    <th>Book ID</th>
+    <th>Book Title</th>
+    <th>Book Author</th>
+    <th>Book Year of Publish</th>
+    </thead>
+    <tbody>
+      
+        <tr *ngFor="let a of books">
+          <td>
+            <input [(ngModel)]="a.id" type="text" name="{{a.id}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="a.title" type="text" name="{{a.title}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="a.year" type="text" name="{{a.year}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="a.author" type="text" name="{{a.author}}" />
+          </td>
+         
+          
+  </tr>
+  </tbody>
+  </table>  
